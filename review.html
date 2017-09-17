@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>VIChub</title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/Login.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script async src="//jsfiddle.net/apougher/DVng2/embed/"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // Check Radio-box
+                $(".rating input:radio").attr("checked", false);
+
+                $('.rating input').click(function () {
+                    $(".rating span").removeClass('checked');
+                    $(this).parent().addClass('checked');
+                });
+
+                $('input:radio').change(
+                  function(){
+                    var userRating = this.value;
+                }); 
+            });
+            </script>
+</head>
+
+<body>
+
+    <!-- **************Header area**************-->
+    <div class="search_header">
+        <div class="width">
+            <div class="search_header_left">
+                <a href="#">
+                <a href="index.html"><img src="img/logomini.png"></a>
+                </a>
+            </div>
+            <div class="search_header_mide">
+                <div class="avsulate_sea">
+                    <a href=""><img src="img/search.png" alt="image"></a>
+                </div>
+                <input class="searchTerm" placeholder="Search for a Course, Lecturer or Flat" type="text">
+            </div>
+            <div class="search_header_right">
+                <ul>
+                    <li>
+                        <a href="#">+ Add Review</a>
+                    </li>
+                    <li>
+                        <a href="socialLOGIN.html">Login / Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- **************search main area**************-->
+
+    
+    <div class="search_main_area">
+        <div class="course_area">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>></li>
+                    <li><a href="#">Add Review</a></li>
+                    <li>></li>
+                    <li><a href="#">Submit</a></li>
+                </ul>
+            </div>
+        <div class="width">
+            <div class="search_main_area_right">
+              <div class="form-style-5">
+                 
+                     
+    
+                <form>
+                   <fieldset>
+                        <label for="job"> What are you reviewing?:</label>
+                            <select id="job" name="field4">
+                                <optgroup label="Victoria University">
+                                    <option value="Courses">Courses</option>
+                                    <option value="Lecturers">Lecturers</option>
+                                    <option value="Flats">Flats</option>
+                                </optgroup>
+                            </select>      
+                    </fieldset>
+                       <fieldset>
+                        <label for="job">Department:</label>
+                            <select id="job" name="field4">
+                                    <option value="Architectural Studies and Building Science">Architectural Studies and Building Science</option>
+                                    <option value="Business">Business</option>
+                                    <option value="Design, Film and Media">Design, Film and Media</option>
+                                    <option value="Education and Teaching">Education and Teaching</option>
+                                    <option value="English Literature and Creative Writing ">English Literature and Creative Writing </option>
+                                    <option value="Engineering and Digital Technologies">Engineering and Digital Technologies</option>
+                                    <option value="Environmental Sciences">Environmental Sciences</option>
+                                    <option value="Health">Health </option>
+                                    <option value="History and Philosophy">History and Philosophy</option>
+                                    <option value="Languages and Linguistics">Languages and Linguistics</option>
+                                    <option value="Law">Law</option>
+                                    <option value="Mathematics and Statistics">Mathematics and Statistics</option>
+                                    <option value="Music and Theatre">Music and Theatre</option>
+                                    <option value="Politics and Public Policy">Politics and Public Policy</option>
+                                    <option value="Psychology">Psychology </option>
+                                    <option value="Science ">Science </option>
+                                    <option value="Social Sciences">Social Sciences</option>
+                            </select>      
+                    </fieldset>
+                     <fieldset>
+                        <label for="job">What is the name of the class?:</label>
+                                
+                                <select id="drp"></select>
+
+                                <h1 id="answer"></h1>
+                                  
+                    </fieldset>
+
+
+
+                <fieldset>
+                <label for="job">Workload:</label>
+                     <div class="rating">
+                        <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
+                        <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
+                        <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
+                        <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
+                        <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+                    </div>
+                   
+                </fieldset>
+
+                 <fieldset>
+                <label for="job">Clarity:</label>
+                     <div class="rating">
+                        <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
+                        <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
+                        <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
+                        <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
+                        <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+                    </div>
+                   
+                </fieldset>
+
+                 <fieldset>
+                <label for="job">Easiness:</label>
+                     <div class="rating">
+                        <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
+                        <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
+                        <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
+                        <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
+                        <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+                    </div>
+                   
+                </fieldset>
+
+                 <fieldset>
+                <label for="job">Helpfulness:</label>
+                     <div class="rating">
+                        <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
+                        <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
+                        <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
+                        <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
+                        <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+                    </div>
+                   
+                </fieldset>
+                <a href = "search.html">
+            <input type="submit" value="Submit" />
+                </a>
+        </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- **************footer area**************-->
+    <div class="footer_area">
+        <div class="width">
+            <div class="footer_area_inner">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li>| </li>
+                    <li><a href="#">Contact</a></li>
+                    <li>| </li>
+                    <li><a href="#">Terms & Conditions </a></li>
+                    <li>| </li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
